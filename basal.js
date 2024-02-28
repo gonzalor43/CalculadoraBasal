@@ -36,9 +36,9 @@ function calculo1 (peso) {
     if (peso <= 10){
         vol_d = peso * 100;
     } else if(peso <= 20 && peso > 10){
-        vol_d = 10 * 100 + (peso-10)*50;
+        vol_d = 1000 + ((peso-10)*50);
     } else {
-        vol_d = 10*100+10*50+(peso-20)*20;
+        vol_d = 1500+((peso-20)*20);
     }
     return vol_d;
 }
